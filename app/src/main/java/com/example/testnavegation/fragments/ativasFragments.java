@@ -1,5 +1,6 @@
 package com.example.testnavegation.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.testnavegation.Adicionar;
+import com.example.testnavegation.MainActivity;
 import com.example.testnavegation.R;
 
 /**
@@ -76,6 +79,7 @@ public class ativasFragments extends Fragment {
 
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -87,7 +91,9 @@ public class ativasFragments extends Fragment {
         btnAdicionar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Apertou!", Toast.LENGTH_LONG).show();
+                Intent telaAdd = new Intent(getContext(), Adicionar.class);
+                startActivity(telaAdd);
+
             }
         });
 
