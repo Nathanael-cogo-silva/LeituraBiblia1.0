@@ -9,10 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.testnavegation.Adicionar;
-import com.example.testnavegation.MainActivity;
 import com.example.testnavegation.R;
 
 /**
@@ -86,7 +84,7 @@ public class ativasFragments extends Fragment {
 
         vista = inflater.inflate(R.layout.fragment_ativas_fragments, container, false);
 
-        btnAdicionar = (Button) vista.findViewById(R.id.btnAdicionar);
+        btnAdicionar = (Button) vista.findViewById(R.id.btnProximo);
 
         btnAdicionar.setOnClickListener(new View.OnClickListener() {
             @Override
